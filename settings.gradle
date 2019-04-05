@@ -1,0 +1,6 @@
+rootProject.name = 'microservice'
+include 'uaa'
+include 'vehicle'
+include 'discovery'
+include 'gateway'
+

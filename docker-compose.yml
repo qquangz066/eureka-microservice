@@ -1,0 +1,25 @@
+# Use postgres/example user/password credentials
+version: '3.1'
+
+services:
+
+  db-uaa:
+    image: postgres:latest
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: uaa
+      POSTGRES_USER: uaa
+      POSTGRES_DB: uaa
+    ports:
+      - 5432:5432
+
+  db-vehicle:
+    image: postgres:latest
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: vehicle
+      POSTGRES_USER: vehicle
+      POSTGRES_DB: vehicle
+    ports:
+      - 5433:5432
+
